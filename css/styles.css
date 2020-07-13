@@ -1,3 +1,5 @@
+/*************************** TAG SELECTORS ***************************/
+
 body {
   background-color: #ffdecf;
 }
@@ -17,9 +19,44 @@ p {
   100% {border:4px solid green;}
 }
 
+img:hover {
+  background-color: gold;
+}
+
 img {
-  border-radius: 50%;
   border:4px solid #ba7967;
+  background-color: red;
+}
+
+/*************************** CLASS SELECTORS ***************************/
+/*
+can use classes to group and have similar style
+more specific than tag selectors
+
+HTML elements can also have psuedo classes (i.e. :active)
+b/c HTML elements can have different states
+*/
+
+.bacon {
+  background-color: green;
   animation-name: example;
   animation-duration: 4s;
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+.broccoli {
+  background-color: red;
+}
+
+/*************************** ID SELECTORS ***************************/
+/*
+use for only one thing in an html page
+more specific than tag selectors
+any element can only have one id
+*/
+#heading {
+  color: blue;
 }
